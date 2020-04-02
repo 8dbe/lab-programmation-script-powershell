@@ -11,6 +11,14 @@
 
 #>
 
-$personneNOM = "Widby"
-$personneAge = 35
+[String]$personneNOM = "Widby"
+[Int]$personneAge = 35
 Write-Host "Bonjour $personneNom, tu as $personneAge ans. "
+
+# Test sur l'age de la personne
+switch ($personneAge) {
+    {$_ -le 25} {Write-Host 'en pleine jeunesse'; break }
+    {$_ -le 35} {Write-Host 'en pleine force vive'; break }
+    {$_ -le 45} {Write-Host 'en pleine maturité'; break }
+    Default {Write-Host 'en pleine serénité'}
+}
