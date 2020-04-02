@@ -12,5 +12,5 @@
 #>
 
 $personneNOM = "Widby"
-$personneAge = 23
+$personneAge = 35
 Write-Host "Bonjour $personneNom, tu as $personneAge ans. "
